@@ -42,8 +42,8 @@ const Start = ({ navigation }) => {
             onPress={() => setColor("#D55672")}
           />
         </View>
-        // This button navigates to the Chat screen and passes the name and
-        color as parameters
+        {/* This button navigates to the Chat screen and passes the name and
+         color as parameters */}
         <TouchableOpacity
           onPress={() => navigation.navigate("Chat", { name, color })}
           style={styles.button}
@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
     width: "88%",
     alignItems: "center",
     borderRadius: 5,
+    marginTop: 20,
   },
   choicesContainer: {
     flexDirection: "row",
